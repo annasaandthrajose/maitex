@@ -1,0 +1,31 @@
+<header>
+    <div class="navbar bg-primary shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+<i  style="font-size:50px" class="fas fa-shipping-fast">
+    <strong>Amazone</strong>
+    <div class="form-group">
+        <input type="text" class="form-control"placeholder="search product" name="search" [(ngModel)]="search">
+        <button type="submit" (click)="searchItem()">search</button>
+    </div>
+    <span class="fas fa-search search-icon"></span>
+</i>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="card" style="width: 18rem;">
+        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2299060/2018/7/30/7584b116-2a2c-4fb1-881c-af58cc484b181532944603854-Tokyo-Talkies-Women-Black-Printed-Maxi-Dress-4791532944603727-1.jpg" width=50px class="card-img-top" alt="...">
+        <div class="card-body">
+          <div>
+              <input type="text" name="no" [(ngModel)]="no">
+          </div>
+          <div>
+            <input type="text" name="item" [(ngModel)]="item">
+        </div>
+        <div>
+            <input type="text" name="amount" [(ngModel)]="amount">
+        </div>
+          <button type="submit" (click)="additem()">Add Item</button>
+        </div>
+      </div>
+</body>
